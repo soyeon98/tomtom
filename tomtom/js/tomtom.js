@@ -161,6 +161,9 @@
         section3(){
             let cnt = 0;
             let setId = 0;
+            const section3Cnt = $('.section3_cnt');
+
+
 
             //슬라이드함수
             function mainSlide(){
@@ -169,6 +172,7 @@
                    if(cnt > 8) cnt=0;
                    if(cnt < 0) cnt=8;
                    $('#section3 .slide-wrap').stop().animate({left:`${(-100/3)*cnt}%`},0);
+                   section3Cnt.html(cnt+1);
                 });
                 pageNation();
               }   
@@ -229,8 +233,11 @@
                             clearInterval(setId);
                             cnt=idx;
                             mainSlide();
+                            
                         }
+                       
                     });
+                  
                 });            
                 //드래그앤드롭
                 let touchStart = 0;
@@ -262,10 +269,13 @@
                         $('#section3 .slide-wrap').css({left:dragEnd-dragStart});
                     }
                 });
+
+                
         },
         section5(){
 
             let cnt = 0;
+            const changeNum = $('#section5 .change-num');
 
             //슬라이드함수
             function mainSlide(){
@@ -274,8 +284,10 @@
                    if(cnt > 4) cnt=0;
                    if(cnt < 0) cnt=4;
                    $('#section5 .slide-wrap').stop().animate({left:`${(-100/3)*cnt}%`},0);
+                   changeNum.html(cnt+1);
                 });
                 pageNation();
+               
               }   
 
                 function nextCount(){
