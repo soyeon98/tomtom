@@ -22,15 +22,7 @@
                 if(newScroll===0){
                     $('#header').removeClass('on');
                 }
-            });
-        
-           
-
-        
-
-                
-            
-            
+            });         
         },
         section1(){
             const $slide= $('#section1 .slide');
@@ -163,8 +155,6 @@
             let setId = 0;
             const section3Cnt = $('.section3_cnt');
 
-
-
             //슬라이드함수
             function mainSlide(){
 
@@ -202,7 +192,6 @@
                         if(!$('#section3 .slide-wrap').is(':animated')){
                             nextCount();
                         }
-                        
                     }
                 });
                 $('#section3 .arrow-prev-btn').on({
