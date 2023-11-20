@@ -8,17 +8,16 @@
 }
 #wrap #header {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
   height: 137.594px;
   background-color: #fff;
   position: fixed;
   transition: all 0.6s;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 }
 #wrap #header.on {
   height: 105.594px;
-  border-bottom: #666666;
+  border-bottom: 1px solid #666666;
 }
 #wrap #header .container {
   width: 100%;
@@ -252,7 +251,7 @@
 #wrap #main #section2 .container .gap {
   width: 100%;
   height: 100%;
-  padding: 0 60px 0 30px;
+  padding: 0 80px 0 30px;
   display: flex;
 }
 #wrap #main #section2 .container .gap .icon {
@@ -262,9 +261,8 @@
   align-items: center;
 }
 #wrap #main #section2 .container .gap .icon > img {
-  width: 30px;
-  height: 30px;
-  margin: 0 20px 0 0;
+  width: 100%;
+  padding: 0 30px 0 0;
 }
 #wrap #main #section2 .container .gap .slide-container {
   width: 100%;
@@ -282,7 +280,6 @@
 }
 #wrap #main #section2 .container .gap .slide-container .slide-view .slide-wrap .slide {
   width: 100%;
-  height: 70px;
 }
 #wrap #main #section2 .container .gap .slide-container .slide-view .slide-wrap .slide > ul {
   width: 100%;
@@ -291,22 +288,22 @@
 #wrap #main #section2 .container .gap .slide-container .slide-view .slide-wrap .slide > ul > li {
   width: 50%;
   height: 70px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  overflow: hidden;
+  padding: 0 20px 0 0;
 }
 #wrap #main #section2 .container .gap .slide-container .slide-view .slide-wrap .slide > ul > li a {
-  width: 80%;
-  font-size: 16px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  width: 75%;
   display: inline-block;
+  font-size: 16px;
   font-weight: 300;
   color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #wrap #main #section2 .container .gap .slide-container .slide-view .slide-wrap .slide > ul > li span {
-  width: 10%;
+  width: 15%;
   font-size: 16px;
   font-weight: 300;
   color: #fff;
@@ -317,7 +314,6 @@
   cursor: pointer;
 }
 #wrap #main #section2 .container .gap .slide-container .slide-view .slide-wrap .slide > ul > li i img {
-  width: 30px;
   font-size: 16px;
   font-weight: 300;
   color: #fff;
@@ -505,12 +501,15 @@
 #wrap #main #section3 .container .gap .page-btn-box .page-num {
   margin: 0 8px 0 0;
 }
-#wrap #main #section3 .container .gap .page-btn-box .page-num h3 {
+#wrap #main #section3 .container .gap .page-btn-box .page-num > h3 {
   font-size: 18px;
   color: #333333;
   font-weight: 500;
   display: flex;
   align-items: center;
+}
+#wrap #main #section3 .container .gap .page-btn-box .page-num > h3 > span {
+  padding: 0 4px 0 0;
 }
 #wrap #main #section3 .container .gap .page-btn-box span {
   margin: 0 4px;
@@ -575,14 +574,14 @@
 #wrap #main #section4 .container .gap .four-box .content {
   width: 100%;
 }
-#wrap #main #section4 .container .gap .four-box .content h2 {
+#wrap #main #section4 .container .gap .four-box .content > h2 {
   font-size: 47px;
   color: #572a31;
   line-height: 1.3;
   letter-spacing: -2.4px;
 }
 #wrap #main #section4 .container .gap .four-box .content img {
-  margin: 15px 0 42px 0;
+  padding: 15px 0 42px 0;
 }
 #wrap #main #section4 .container .gap .four-box .content p {
   color: #572a31;
@@ -596,25 +595,23 @@
 }
 #wrap #main #section4 .container .gap .four-box .nemo-btn .col-gap {
   width: 100%;
-  margin: 0 15px;
-  margin: 30px 0 0 0;
+  padding: 30px 15px 0 15px;
 }
 #wrap #main #section4 .container .gap .four-box .nemo-btn .col-gap ul {
   width: 674.871px;
   display: flex;
-  justify-content: center;
+  flex-flow: row wrap;
 }
 #wrap #main #section4 .container .gap .four-box .nemo-btn .col-gap ul li {
   width: 33.333%;
   margin: 0 8px;
-  display: flex;
-  justify-content: center;
 }
 #wrap #main #section4 .container .gap .four-box .nemo-btn .col-gap ul li .nemo {
   display: flex;
   width: 210px;
   height: 58px;
   border: 1px solid #572a31;
+  border-radius: 5px;
   justify-content: center;
   align-items: center;
   font-size: 24px;
@@ -728,7 +725,6 @@
 }
 #wrap #main #section5 .container .gap .page-btn-box .page-num {
   margin: 0 8px 0 0;
-  display: flex;
 }
 #wrap #main #section5 .container .gap .page-btn-box .page-num h3 {
   font-size: 18px;
@@ -736,6 +732,9 @@
   font-weight: 500;
   display: flex;
   align-items: center;
+}
+#wrap #main #section5 .container .gap .page-btn-box .page-num h3 span {
+  padding: 0 4px 0 0;
 }
 #wrap #main #section5 .container .gap .page-btn-box span {
   margin: 0 4px;
@@ -789,6 +788,14 @@
 #wrap #main #section6 .container .gap .content ul li {
   width: 20%;
   overflow: hidden;
+  padding: 3px;
+}
+#wrap #main #section6 .container .gap .content ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
 }
 #wrap #main #section6 .container .gap .content ul li a img {
   width: 100%;
@@ -816,21 +823,32 @@
   display: flex;
 }
 #wrap #footer .container .gap .content .left-box {
-  width: 23.571%;
+  width: 28.571%;
+}
+#wrap #footer .container .gap .content .left-box .call-box {
+  width: 100%;
+}
+#wrap #footer .container .gap .content .left-box .call-box > h2 {
+  width: 20rem;
+  display: block;
+}
+#wrap #footer .container .gap .content .left-box .call-box > h2 > img {
+  width: 100%;
 }
 #wrap #footer .container .gap .content .left-box .call-box > p {
-  font-size: 16px;
+  font-size: 1.25rem;
   color: #572a31;
+  padding: 20px 0;
+  font-weight: 600;
 }
 #wrap #footer .container .gap .content .left-box .call-box h3 {
-  font-size: 36px;
+  font-size: 1.875rem;
   color: #572a31;
   font-family: "Roboto";
-  font-weight: 300;
-  margin: 20px 0 0 0;
+  font-weight: 600;
 }
 #wrap #footer .container .gap .content .center-box {
-  width: 50%;
+  width: 45%;
 }
 #wrap #footer .container .gap .content .center-box .top-box {
   width: 100%;
@@ -845,19 +863,23 @@
 }
 #wrap #footer .container .gap .content .center-box .top-box ul li a {
   font-size: 16px;
-  color: #572a31;
+  color: #571c1f;
+  font-weight: 400;
 }
 #wrap #footer .container .gap .content .center-box .middle-box {
-  padding: 30px 0 20px 0;
+  padding: 30px 0 10px 0;
 }
 #wrap #footer .container .gap .content .center-box .middle-box p {
-  font-size: 14px;
-  color: #8a8a8a;
+  font-size: 12px;
+  color: #6b7280;
   line-height: 28px;
+  font-weight: 600;
+  word-break: keep-all;
 }
 #wrap #footer .container .gap .content .center-box .bottom-box h5 {
-  font-size: 14px;
-  color: #8a8a8a;
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 600;
 }
 #wrap #footer .container .gap .content .right-box {
   width: 26.429%;

@@ -9,7 +9,7 @@
         },
         header(){
 
-            let newScroll = $(window).scrollTop();  //새로운 스크롤값               
+            let newScroll = $(window).scrollTop();               
 
             $(window).scroll(function(e){
                 
