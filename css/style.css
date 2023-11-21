@@ -422,7 +422,6 @@
   animation: sec3slide 0.7s ease-in-out both;
 }
 #wrap #main #section3 .container .gap .content-box .slide-container .slide-view .slide-wrap {
-  pointer-events: none;
   width: 700%;
   margin: 0 0 0 -200%;
   display: flex;
@@ -450,12 +449,15 @@
 #wrap #main #section3 .container .gap .content-box .slide-container .slide-view .slide-wrap .slide .txt-box {
   width: 100%;
   margin: 40px 0 0 0;
+  overflow: hidden;
 }
-#wrap #main #section3 .container .gap .content-box .slide-container .slide-view .slide-wrap .slide .txt-box h2 {
+#wrap #main #section3 .container .gap .content-box .slide-container .slide-view .slide-wrap .slide .txt-box > h2 {
+  width: 100%;
   font-size: 20px;
   font-weight: 700;
   color: #333;
   text-align: center;
+  word-break: keep-all;
 }
 #wrap #main #section3 .container .gap .arrow-prev-btn {
   position: absolute;
@@ -600,7 +602,6 @@
 #wrap #main #section4 .container .gap .four-box .nemo-btn .col-gap ul {
   width: 674.871px;
   display: flex;
-  flex-flow: row wrap;
 }
 #wrap #main #section4 .container .gap .four-box .nemo-btn .col-gap ul li {
   width: 33.333%;
