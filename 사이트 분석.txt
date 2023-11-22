@@ -18,7 +18,7 @@ URL : https://tomntoms.com/main/main.html
         2 이동 버튼
         1 2 로만 움직임
     섹션2
-
+        세로슬라이드
     섹션3
         슬라이드 9개
         한화면 view  3개

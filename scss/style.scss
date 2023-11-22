@@ -366,7 +366,7 @@
                         justify-content: center;  
                         margin: 0 0 50px 0; 
                         &.on{
-                            animation: sec3title 0.5s ease-in-out both;   
+                            animation: sec3title 0.8s ease-in-out both;   
                         }                           
                     }
                     .content-box{
@@ -378,7 +378,7 @@
                                 margin: 0 auto;
                                 overflow: hidden;
                                 &.on{
-                                    animation: sec3slide 0.7s ease-in-out both;   
+                                    animation: sec3slide 1s ease-in-out both;   
                                 }             
                                 .slide-wrap{                                                               
                                     width: 100% * 7;
@@ -486,15 +486,6 @@
                                 }
                             }
                         }
-                        .go-stop{
-                            margin: 0 0 0 8px;
-                            i{
-                                font-size: 18px;
-                                color: #333333;
-                                font-weight: 500;
-                                
-                            }
-                        }
                     }
                 }
             }
@@ -600,6 +591,9 @@
               
                             width: auto;
                         }
+                        &.on{
+                            animation: sec5title 0.8s ease-in-out both;   
+                        }   
                     }
                     .content-box{
                         width: 100%;
@@ -609,6 +603,9 @@
                                 width: 100%;
                                 margin: 0 auto;
                                 overflow: hidden;
+                                &.on{
+                                    animation: sec5slide 1s ease-in-out both;   
+                                } 
                                 .slide-wrap{
                                     width: 100% * 5;
                                     margin: 0 calc(-500%/3);
@@ -650,6 +647,9 @@
                         z-index: 3;
                         top: 55%;
                         left: 30px;
+                        &.on{
+                            animation: sec5slide 1s ease-in-out both;   
+                        } 
                         img{
                             display: block;
                             width: 21px;
@@ -661,6 +661,9 @@
                         z-index: 3;
                         top: 55%;
                         right: 30px;
+                        &.on{
+                            animation: sec5slide 1s ease-in-out both;   
+                        } 
                         img{
                             display: block;
                             width: 21px;
@@ -674,6 +677,9 @@
                         right: 30px;
                         text-align: center;
                         display: flex;
+                        &.on{
+                            animation: sec5slide 1s ease-in-out both;   
+                        } 
                         .page-num{
                             margin: 0 8px 0 0; 
                             h3{
@@ -702,17 +708,17 @@
                                 }
                             }
                         }
-                        .go-stop{
-                            margin: 0 0 0 8px;
-                            i{
-                                font-size: 18px;
-                                color: #333333;
-                                font-weight: 500;
-                            }
-                        }
                     }
                 }
             }
+        }
+        @keyframes sec5title {
+            0% {transform: translateY(500px); opacity: 0;}
+            100% {transform: translateY(  0px);  opacity: 1;}
+        }
+        @keyframes sec5slide {
+            0% {transform: translateY(500px); opacity: 0;}
+            100% {transform: translateY(  0px);  opacity: 1;}
         }
         #section6{
             width: 100%;

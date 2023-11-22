@@ -405,7 +405,7 @@
   margin: 0 0 50px 0;
 }
 #wrap #main #section3 .container .gap .title-box.on {
-  animation: sec3title 0.5s ease-in-out both;
+  animation: sec3title 0.8s ease-in-out both;
 }
 #wrap #main #section3 .container .gap .content-box {
   width: 100%;
@@ -419,7 +419,7 @@
   overflow: hidden;
 }
 #wrap #main #section3 .container .gap .content-box .slide-container .slide-view.on {
-  animation: sec3slide 0.7s ease-in-out both;
+  animation: sec3slide 1s ease-in-out both;
 }
 #wrap #main #section3 .container .gap .content-box .slide-container .slide-view .slide-wrap {
   width: 700%;
@@ -526,14 +526,6 @@
 #wrap #main #section3 .container .gap .page-btn-box span a.on {
   border: 1px solid #572a31;
   background: #572a31;
-}
-#wrap #main #section3 .container .gap .page-btn-box .go-stop {
-  margin: 0 0 0 8px;
-}
-#wrap #main #section3 .container .gap .page-btn-box .go-stop i {
-  font-size: 18px;
-  color: #333333;
-  font-weight: 500;
 }
 @keyframes sec3title {
   0% {
@@ -650,6 +642,9 @@
 #wrap #main #section5 .container .gap .title-box img {
   width: auto;
 }
+#wrap #main #section5 .container .gap .title-box.on {
+  animation: sec5title 0.8s ease-in-out both;
+}
 #wrap #main #section5 .container .gap .content-box {
   width: 100%;
 }
@@ -660,6 +655,9 @@
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+}
+#wrap #main #section5 .container .gap .content-box .slide-container .slide-view.on {
+  animation: sec5slide 1s ease-in-out both;
 }
 #wrap #main #section5 .container .gap .content-box .slide-container .slide-view .slide-wrap {
   width: 500%;
@@ -700,6 +698,9 @@
   top: 55%;
   left: 30px;
 }
+#wrap #main #section5 .container .gap .arrow-prev-btn.on {
+  animation: sec5slide 1s ease-in-out both;
+}
 #wrap #main #section5 .container .gap .arrow-prev-btn img {
   display: block;
   width: 21px;
@@ -710,6 +711,9 @@
   z-index: 3;
   top: 55%;
   right: 30px;
+}
+#wrap #main #section5 .container .gap .arrow-next-btn.on {
+  animation: sec5slide 1s ease-in-out both;
 }
 #wrap #main #section5 .container .gap .arrow-next-btn img {
   display: block;
@@ -723,6 +727,9 @@
   right: 30px;
   text-align: center;
   display: flex;
+}
+#wrap #main #section5 .container .gap .page-btn-box.on {
+  animation: sec5slide 1s ease-in-out both;
 }
 #wrap #main #section5 .container .gap .page-btn-box .page-num {
   margin: 0 8px 0 0;
@@ -752,13 +759,25 @@
   border: 1px solid #572a31;
   background: #572a31;
 }
-#wrap #main #section5 .container .gap .page-btn-box .go-stop {
-  margin: 0 0 0 8px;
+@keyframes sec5title {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
-#wrap #main #section5 .container .gap .page-btn-box .go-stop i {
-  font-size: 18px;
-  color: #333333;
-  font-weight: 500;
+@keyframes sec5slide {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 #wrap #main #section6 {
   width: 100%;

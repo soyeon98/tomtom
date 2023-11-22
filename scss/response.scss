@@ -385,6 +385,13 @@
   #wrap #main #section3 .container .gap .arrow-next-btn {
     right: 35px;
   }
+  #wrap #main #section5 .container .gap .content-box .slide-container .slide-view .slide-wrap {
+    width: 1500%;
+    margin: 0 -500%;
+  }
+  #wrap #main #section5 .container .gap .content-box .slide-container .slide-view .slide-wrap .slide {
+    width: 100%;
+  }
 }
 
 @media all and (max-width:360px) {
